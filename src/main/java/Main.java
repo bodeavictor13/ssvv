@@ -32,7 +32,7 @@ public class Main {
         consola.run();
 
         anotherVulnerability2();
-
+        anotherVulnerability6()
         //PENTRU GUI
         // de avut un check: daca profesorul introduce sau nu saptamana la timp
         // daca se introduce nota la timp, se preia saptamana din sistem
@@ -64,6 +64,14 @@ public class Main {
         conn.setRequestProperty("Authorization", "Basic " + encoding); // Noncompliant
     }
     public static void anotherVulnerability5() throws IOException {
+        String encoding = Base64.getEncoder().encodeToString(("login:passwd").getBytes("UTF-8"));
+        URL url = new URL("www.center.com");
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+        conn.setDoOutput(true);
+        conn.setRequestProperty("Authorization", "Basic " + encoding); // Noncompliant
+    }
+    public static void anotherVulnerability6() throws IOException {
         String encoding = Base64.getEncoder().encodeToString(("login:passwd").getBytes("UTF-8"));
         URL url = new URL("www.center.com");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
