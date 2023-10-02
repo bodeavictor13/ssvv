@@ -32,7 +32,7 @@ public class Main {
         consola.run();
 
         anotherVulnerability2();
-        depracatedM()
+        depracatedM();
 
         //PENTRU GUI
         // de avut un check: daca profesorul introduce sau nu saptamana la timp
