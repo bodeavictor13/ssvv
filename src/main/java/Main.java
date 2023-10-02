@@ -32,7 +32,6 @@ public class Main {
         consola.run();
 
         anotherVulnerability2();
-        depracatedM();
 
         //PENTRU GUI
         // de avut un check: daca profesorul introduce sau nu saptamana la timp
@@ -63,9 +62,5 @@ public class Main {
         conn.setRequestMethod("POST");
         conn.setDoOutput(true);
         conn.setRequestProperty("Authorization", "Basic " + encoding); // Noncompliant
-    }
-
-    @Deprecated
-    public static void depracatedM(){
     }
 }
