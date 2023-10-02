@@ -32,7 +32,7 @@ public class Main {
         consola.run();
 
         anotherVulnerability2();
-        anotherVulnerability6()
+        anotherVulnerability6();
         //PENTRU GUI
         // de avut un check: daca profesorul introduce sau nu saptamana la timp
         // daca se introduce nota la timp, se preia saptamana din sistem
