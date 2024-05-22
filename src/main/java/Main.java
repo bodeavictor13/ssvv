@@ -41,6 +41,7 @@ public class Main {
         anotherVulnerability12();
         anotherVulnerability13();
         anotherVulnerability14();
+        anotherVulnerability15();
         //PENTRU GUI
         // de avut un check: daca profesorul introduce sau nu saptamana la timp
         // daca se introduce nota la timp, se preia saptamana din sistem
